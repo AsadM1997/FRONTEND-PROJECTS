@@ -40,7 +40,7 @@ nav{
 }
 .container{
     padding: 0 7%;
-    border: #000 solid 1px;
+    /* border: #000 solid 1px; */
 }
 .header h1{
     font-size: 4vw;
@@ -76,8 +76,8 @@ nav{
     border: 0;
     outline: none;
     cursor: pointer;
-}
-.search-bar form button img{
+} 
+.search-bar form button img {
     width: 15px;
     margin-top: 7px;
 }

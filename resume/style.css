@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+}
+#body-header{
+    background-image:url(img/se.jpg);
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.9; */
+}
+#horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+}
