@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="stylesheet"  type="text/css"   href="style.css" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/e0721cb8b3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header id="body-header">
         <nav>
-            <ul id="horizontal-list">
-                <li id="#">Home</li>
-                <li id="#about">about</li>
-                <li id="#skills">skills</li>
-                <li id="#experience">experience</li>
-                <li id="#education">education</li>
-                <li id="#portfoliio">portfolio</li>
-                <li id="#contact">contact</li>
+            <ul class="horizontal-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">about</a>
+                </li>
+                <li>
+                    <a href="#education">education</a>
+                </li>
+                <li>
+                    <a href="#projects">projects</a>
+                </li>
+                <li>
+                    <a href="#portfolio">portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact">contact</a>
+                </li>
             </ul>
         </nav>
-        
+
+
+        <div id="name-social-container">
+            <div class="text-center">
+                <h1 id="my-name">
+                    Mohd Asad
+                </h1>
+            </div>
+        </div>
+        <div>
+            <ul class="horizontal-list text-center">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a>
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <main>
-        <section id="about"></section>
+        <section id="about">
+            <div id="my-image">
+                <img src="img/my-image.jpg" />
+            </div>
+            <p>Hello,My name is Mohd Asad i have done B.Tech in computer science engg i have strong interest in web
+                devlopment
+                i have worked on some projects like ecommerce-app food-delivery-app using Javascript, React etc i am
+                looking opportunity as a intern in web devlopment to skills up
+                because i want to become good develper
+                i want to contribute my skills on real world projects
+            </p>
+        </section>
         <section id="skills"></section>
         <section id="experience"></section>
         <section id="education"></section>
         <section id="portfolio"></section>
         <section id="contact"></section>
-    </main> 
+    </main>
 </body>
+
 </html>
