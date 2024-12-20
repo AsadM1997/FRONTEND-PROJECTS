@@ -23,15 +23,16 @@ body{
     display: inline-block;
     margin: 0px 8px 8px 0px;
 }
-.horizontal-list li a{
+.horizontal-list li a{      
     color: white;
     text-decoration: none;
-    transition: color 0.4s , border-bottom 0.5s;
 }
-.horizontal-list li a:hover{
+
+.nav-menu li a:hover{
     color: black;
     border-bottom: 1px solid white;
 }
+
 .text-center{
     text-align: center;
 }
@@ -61,4 +62,31 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 50%;
+}
+.socials-icons li a i{
+    padding: 10px;
+    font-size: 2rem;
+    /* color: green; */
+    border-radius: 50%;
+
+}
+
+.socials-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230,196,196,0.3);                  
+}
+#about p{
+    width: 50%;
+    height: 50%;
+    /* padding-left: 25px; */
+}
+#se{
+    width: 50%;
+    height: 25%;
+}
+#intorduction{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-size: contain;
+    padding-left: 1.5625rem;
 }

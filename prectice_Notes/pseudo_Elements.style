@@ -1,0 +1,18 @@
+.style-first-letter::first-line{
+    font-size:2rem;
+    font-weight:bold;
+    text-transform:capitalize;
+}
+before::p{
+    content:'Before';
+     font-size:2rem;
+    font-weight:bold;
+    text-transform:capitalize;
+}
+
+After::p{
+    content:'after';
+     font-size:2rem;
+    font-weight:bold;
+    text-transform:capitalize;
+}
