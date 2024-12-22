@@ -61,6 +61,7 @@ h1,h2,h3{
 
 
 .header{
+    position: relative;
     height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
     background-position: center;
@@ -69,14 +70,14 @@ h1,h2,h3{
     background-attachment: scroll;
 }
 
-/* .header .logo,
-.header .navbar a{
-    color: white;
-} */
 
 .navbar{
-    border: 2px solid lawngreen;
     padding: 1rem;
+}
+.container{
+    max-width:1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 .header .navbar .logo{
     float: left;
@@ -85,7 +86,12 @@ h1,h2,h3{
     float: right;
     margin-top: 1rem;
 }
-
+.navbar a{
+    padding-bottom: 0.3em;
+}
+.navbar a:hover{
+    border-bottom: 1px solid #fff;
+}
 .navbar a:link,
 .navbar a:visited{
     color: #f4f4f4;
@@ -101,4 +107,94 @@ h1,h2,h3{
     padding: 1rem;
     text-transform: uppercase;
 
+}
+ 
+/* ############### button #################### */
+
+.btn{
+    display: inline-block;
+    /* ager font size 32px ka hai then padding 0.5 em 16px hogi */
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+.primary-btn{
+    background: #fff;
+    border-radius: 10em;
+}
+
+.secondery-btn{
+    border: 2px solid rgba(255, 149, 0, 0.89);
+    background: #fff;
+    border-radius: 10em;
+    background: #fff;
+
+    
+}
+/* #################### Header Content styling ######################## */
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header-content p{
+    text-transform: uppercase;
+
+}
+.header-content{
+    position: absolute;
+    text-align: center;
+    /* border: 2px solid white; */
+    top: 50%;
+    left: 50%;
+    /* transform apney parent key respect mey work kareyga */
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+
+
+/* ####### showcase styling */
+.showcase{
+    background: #ddd;
+    padding: 10em 0;
+}
+
+
+/* ############# row ################### */
+.row{
+    height: 35rem;
+    background: #fff;
+}
+
+.row1{
+    margin-bottom: 10em;
+}
+
+.row1 .img-box,
+.row2 .text-box{
+    float: left;
+    width: 50%;
+}
+
+.row1 .text-box,
+.row2 .img-box{
+    float: right;
+    width: 50%;
+}
+.row .img-box{
+    border: 2px solid green;
+    height: 100%;
+}
+.row .text-box{
+    /* border: 2px solid yellowgreen; */
+    padding: 3em;
+    height: 100%;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    /* aspect ratio kharaab na  ho  */
+    object-fit: cover;
 }
