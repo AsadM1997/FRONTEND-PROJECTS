@@ -55,10 +55,12 @@ h1,h2,h3{
 }
 
 
+.bg-dark{
+    background-color: #263238;
+}
 
 
-
-
+/* ######### header */
 
 .header{
     position: relative;
@@ -79,10 +81,10 @@ h1,h2,h3{
     width: 90%;
     margin: 0 auto;
 }
-.header .navbar .logo{
+.navbar .logo{
     float: left;
 }
-.header .navbar .nav-items{
+.navbar .nav-items{
     float: right;
     margin-top: 1rem;
 }
@@ -102,7 +104,7 @@ h1,h2,h3{
     display: block;
 }
 
-.header .navbar .nav-item{
+.navbar .nav-item{
     display: inline-block;
     padding: 1rem;
     text-transform: uppercase;
@@ -131,6 +133,13 @@ h1,h2,h3{
     background: #fff;
 
     
+}
+
+.secondery-btn:hover{
+    background: #ddd;
+}
+ .primary-btn:hover{
+    background: #ddd;
 }
 /* #################### Header Content styling ######################## */
 .header-content h1{
@@ -164,6 +173,7 @@ h1,h2,h3{
 .row{
     height: 35rem;
     background: #fff;
+    box-shadow: 0px 0px 20px 0px #ddd;
 }
 
 .row1{
@@ -197,4 +207,142 @@ h1,h2,h3{
     height: 100%;
     /* aspect ratio kharaab na  ho  */
     object-fit: cover;
+}
+
+/* ######
+float clear  */
+
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ####################feature section styling################# */
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    box-shadow: 0px 0px 20px 0px rgb(0,0,0,0.3);
+}
+
+.box{   
+    width: 33.3333333%;
+    float: left;
+    /* border: 2px solid yellowgreen; */
+    padding: 2rem;
+    text-align: center;
+}
+.box-1, .box-3{
+    background: #263238;
+}
+.box-2{
+    background: #32a8a8;
+}
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+.socials-media-links i{
+    margin: 2rem;
+}
+
+/* #########about.html styling############ */
+.about{
+    padding: 5rem 0;
+}
+.about-heading::after{
+    content: '';
+    display: block;
+    border: 3px solid rgba(255, 149, 0, 0.89);
+    width: 100%;
+}
+
+
+/* ############## about wrapper styling######### */
+.about-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+.about-wrapper .left{
+    float:left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color:  rgba(255, 149, 0, 0.89);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+/* counts styling**************** */
+.counts {
+    border: 2px solid black;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.count-item{
+    border: 2px solid red;
+    float: left;
+    width: 25%;
+    text-align: center;
+    color:  rgba(255, 149, 0, 0.89);
+    
+}
+.counts::after{
+    content: '';
+    clear: both;
+    display: block;
+}   
+.count-item span{
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.count-item p{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #555
+}
+
+
+/*  about banner styling********** */
+
+.about-banner{
+    background-image: linear-gradient( 109.9deg,  rgba(251,189,100,1) 1.8%, rgba(255,207,139,1) 95.4% );;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #555
+}
+.about-banner .banner-left{
+    width: 60%;
+    float: left;
+    text-align: center;
+}
+.about-banner .banner-right{
+    width: 40%;
+    float: right;
+}
+.about-banner::after{
+    content: '';
+    clear: both;
+    display: block;
+    
 }
