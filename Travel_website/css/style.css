@@ -294,12 +294,12 @@ float clear  */
 }
 /* counts styling**************** */
 .counts {
-    border: 2px solid black;
+    
     padding: 2rem;
     margin-top: 2rem;
 }
 .count-item{
-    border: 2px solid red;
+    
     float: left;
     width: 25%;
     text-align: center;
@@ -327,22 +327,140 @@ float clear  */
 
 .about-banner{
     background-image: linear-gradient( 109.9deg,  rgba(251,189,100,1) 1.8%, rgba(255,207,139,1) 95.4% );;
-    margin-top: 2rem;
+    padding: 2rem;
     font-size: 2rem;
-    color: #555
+    color: #555;
+    box-shadow: 5px 5px 10px #fff;
+    margin-top: 2rem;
 }
 .about-banner .banner-left{
     width: 60%;
     float: left;
-    text-align: center;
+    
 }
-.about-banner .banner-right{
+.banner-right{
     width: 40%;
     float: right;
+    text-align: right;
 }
 .about-banner::after{
     content: '';
     clear: both;
     display: block;
     
+}
+.banner-left-line{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+
+}
+.banner-right-btn{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: 0.3em 2.5em;
+    letter-spacing: 0.5rem; 
+    color: black;
+}
+
+/* contact page styling****************** */
+
+.contact-form{
+    padding: 5rem 0;
+    font-size: 2rem;
+}
+.form-wrapper
+.company-address{
+    height: 760px;
+    border: 2px solid green;
+    width: 49%;
+    float: left;
+    background: #ddd;
+    padding: 1rem;
+}
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+}
+.form{
+    border: 2px solid red;
+    width: 49%;
+    float: right;
+    background: #ddd;
+}
+.form-wrapper::after{
+    content: '';
+    display: block;
+     clear: both;
+}
+.company-address::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper .company-address img{
+    object-fit: contain;
+    object-position: right;
+    min-width: 90%;
+    max-width: 40rem;
+}
+/* form styling**************** */
+
+.form-wrapper .form{
+    height: 760px;
+    font-size: 1.6rem;
+    border: 4px solid black;
+    width: 49%;
+    float: right;
+    padding: 1rem;
+}
+.form h1::after{
+    content: '';
+    display: block;
+    border: 2px solid goldenrod;
+    width: 100%;
+}
+
+.form-wrapper .form label{
+    display: block;
+}
+
+.form-wrapper .form input{
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.form-wrapper .form label::after{
+    content: '*';
+    color: darkblue;
+}
+
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
+
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background:  rgba(255, 149, 0, 0.89);
+    color: black;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
