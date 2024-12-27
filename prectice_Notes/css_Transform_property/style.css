@@ -1,0 +1,27 @@
+.box{
+    width: 100px;
+    height: 100px;
+    font-size: 1.5rem;
+    background:  salmon;
+    margin: 100px auto;
+    padding: 7px;
+    border: 2px solid rebeccapurple;
+    transform-origin: top left ;
+    transform-origin: 0% 100%;
+    /* skew translate rotate scale  */
+    transition: transform 2s ease-in-out;
+}
+.box:hover{
+    transform :rotate(360deg);
+    /* scale(2)  will be 2times in both direction */
+    /* transform: scale(2); */
+
+    /* scale: (x,y); */
+    /* transform: translatey(-100px); */
+    /* transform: translateX(100%); */
+
+    /* skew */
+    /* transform: skewX(50deg); */
+    /* transform: skewy(50deg); */
+
+}
