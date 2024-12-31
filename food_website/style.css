@@ -141,15 +141,118 @@ body{
 
 .about-text{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     text-align: center;
 }
 .about-text{
+    /* border:  2px solid black; */
     flex:1 1 400px;
     padding: 30px;
+    margin: auto;
+    animation: about-text-animation 1s ease-in-out forwards;
+    transform: translateX(-150%);
+}
+@keyframes about-text-animation{
+    100%{
+        transform: translate(0);
+    }
+}
+
+.about-img{
+    /* border: 2px solid red; */
+    flex:1 1 400px;
+    padding: 30px;
+    margin: auto;
+    animation: about-img-animation 1s ease-in-out forwards;
+    transform: translateX(150%);
+}
+@keyframes about-img-animation{
+    100%{
+        transform: translate(0);
+    }
 }
 .about-wrapper .about-img img{
    display: block;
    height: 400px;
+   max-width: 100%;
+   margin: auto;
+   object-fit: cover;
+   object-position: right;
+}
+
+
+/* food-container styling********** */
+
+#food{
+    padding: 5px 0px 10px 0px;
+}
+
+#food h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.food-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 30rem;
+   object-fit: cover;
+   object-position: center;
+}
+.image-container{
+    margin: 0 1rem;
+    position: relative;
+}
+
+.img-content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.img-content h3{
+    color: #fff;
+    font-size: 3rem;
+}
+.img-content a{
+    font-size: 1.2rem;
+}
+.image-container::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.871);
+    z-index: 1;
+    /* opacity: 0; */
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+
+}
+.image-container:hover::after{
+     opacity: 1;
+     transform: scaleY(1);
+}
+.image-container:hover .img-content{
+    opacity: 1;
+    top: 40%;
 }
