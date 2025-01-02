@@ -276,8 +276,7 @@ body{
     padding: 5rem 0 3rem 0;
 
 }
-
-.food-menu-container  .food-menu-img{
+ .food-menu-img img{
     display: block;
     border-radius: 50%;
     width: 25rem;
@@ -286,9 +285,14 @@ body{
     object-position: center;
     z-index: 3;
 }
-
+/*
 .food-menu-item{
     display: flex;
     flex: 1 1 600px;
     justify-content: space-evenly;
 }
+
+.food-menu-description{
+    margin: auto 1.5rem;
+    text-align: center;
+} */
