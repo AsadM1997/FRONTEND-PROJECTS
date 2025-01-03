@@ -1,0 +1,108 @@
+/* food menu styling********** */
+
+.html{
+    font-size: 65.5%;
+}
+#testimonial{
+    padding: 5rem 0rem;
+    background: rgb(243,243,243);
+}
+
+.food-menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding: 5rem 0 3rem 0;
+
+}
+ .food-menu-img img{
+    display: block;
+    border-radius: 50%;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center;
+    z-index: 3;
+}
+
+.food-menu-item{
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+
+.food-menu-description{
+    margin: auto 1.5rem;
+    text-align: center;
+} 
+
+.food-title{
+    font-weight: 400;
+    /* color: #555; */
+    font-size: 2.2rem;
+}
+
+.food-menu-description p{
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 500;
+
+
+}
+
+.food-menu-description .food-price{
+    color: #117964;
+    font-weight: 700;
+    font-size: 2rem;
+    
+}
+/* testimonial styling */
+
+#testimonial{
+    padding: 5rem 0rem;
+    background: rgb(243,243,243);
+}
+.testmonial-title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #555;
+}
+.testimonial-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 1rem;
+    
+}
+.testimonial-container  .checked{
+    color: #ff9529;
+}
+.testimonial-box .testimonial-text{
+    margin: 1rem 0;
+    color: #444;
+}
+
+.testimonial-box{
+    text-align: center;
+    padding: 1rem;
+}
+
+.customer-img img{
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+
+}
+.container{
+    width: 90%;
+    max-width: 75rem;
+    margin: auto;
+
+}
