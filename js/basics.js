@@ -399,3 +399,75 @@
 //     default:
 //         console.log("Invalid Day");
 // }
+// while loop example 
+// let num = 100; 
+// let total = 0; //1 + 2 +3
+// let i = 0;
+
+
+// while(i<=100){
+//     total = total + i;
+//     i++;
+// }
+
+
+// console.log(total);
+
+// let total = (num*(num+1))/2;
+// console.log(total);
+
+// intro to for loop 
+// print 0 to 9
+
+// for(let i = 0;i<=9;i++){
+//     console.log(i);
+// }
+
+// console.log("value of i is ",i);
+
+// for loop example 
+
+// let total = 0;
+
+// let num = 100; // block sey baher initialize kerney per baher bhi kaam kareyga
+
+// for(let i = 1; i<=num; i++){
+//     total = total + i;
+// }
+
+// console.log(total);
+
+// break keywork
+
+// continue keyword 
+
+// for(let i = 1; i<=10; i++){
+//     if(i===4){
+//         break; // yaha sey jump ker jaayga baher ki aur
+//     }
+//     console.log(i);
+// }
+
+// for(let i = 1; i<=10; i++){
+//     if(i===4){
+//         continue; // ye cheez wapis uper chali jaaygi
+//     }
+//     console.log(i);
+// }
+console.log("hello there");
+
+
+// do while loop
+
+// while(i<=9){
+//     console.log(i);
+//     i++;
+// }
+// ek baar chalna hi chalna hai chahey condition false hi kyo na ho 
+// let i = 10;
+// do{
+//     console.log(i);
+//     i++;
+// }while(i<=9);
+
+// console.log("value of i is ", i);

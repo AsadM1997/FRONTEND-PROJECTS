@@ -1,0 +1,26 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 62.5%;
+}
+
+.hero{
+    height: 95vh;
+    width: 100%;
+    background: #edf2fc;
+    font-family: sans-serif;
+    position: relative;
+}
+
+/* ***utility classes */
+.lg-heading{
+    font-size: 3.2rem;
+}
+
+.text-goldenrod{
+    color: rgba(255, 149, 0, 0.89);
+}
