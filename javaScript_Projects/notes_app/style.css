@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins' ,sans-serif;
+    background: #002339;
+    color: #fff;
+
+}
+
+/* utilitiy classes ******** */
+.btn{
+    display: inline-block;
+    border-radius: 3.2rem;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1rem 0;
+    align-items: center;
+    border: none;
+    outline: 0;
+    
+}
+
+.primary-btn{
+    background: rgb(100, 42, 155);
+    color: #fff;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+   
+    margin: 10% 30%;
+    /* border: 2px solid #fff; */
+    /* top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(50%,70%); */
+}
+
+.container h1{
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   /* border: 2px solid black; */
+   font-size: 3rem;
+   font-weight: 700;
+   margin-left: 67px;
+   margin-bottom: 2px;
+}
+
+.container h1 img{
+    width: 40px;
+
+}
+
+.container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container button img{
+    width: 30px;
+    margin-right:  10px;
+}
+
+.notes-container .input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    margin: 20px 0 ;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.input-box img{
+    width: 27px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
