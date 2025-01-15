@@ -33,7 +33,7 @@ const questions = [
             {text:"blue whale", correct:true},
              {text:"elephant", correct:false},
             {text:"giraffe_OR_camel", correct:false}
-        ]
+        ]   
     }
 
 ];
